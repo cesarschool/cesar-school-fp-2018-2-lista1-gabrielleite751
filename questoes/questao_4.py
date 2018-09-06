@@ -10,10 +10,20 @@
 # Para a correta execução do programa, a estrutura atual deve ser mantida,
 # substituindo apenas o comando print(questão...) existente.
 ##
+from math import *
+
 def main():
     print("questao 4")
 
+x = float(input("Quantos quilômetros foram rodados com o carro? "))
+y = float(input("Quantos dias o Carro foi utilizado? "))
 
-    
+km = float(0.15 * x)
+dia = float(60 * y)
+total = float(km + dia)
+
+print("Total a pagar:" + str(total) + " reais")
+
+
 if __name__ == '__main__':
-    main()
+   main()
