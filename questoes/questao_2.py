@@ -10,10 +10,16 @@
 # Para a correta execução do programa, a estrutura atual deve ser mantida,
 # substituindo apenas o comando print(questão...) existente.
 ##
+from math import *
 def main():
     print("questao 2")
 
+TC = int(input("Qual a temperatura local?(Em Celsios)"))
 
+TF = int(((TC/5) * 9)+32)
+
+print("Temperatura em Celsius: " + str(TC))
+print("Temperatura em Fahrenheit: " + str(TF))
 
 if __name__ == '__main__':
     main()
