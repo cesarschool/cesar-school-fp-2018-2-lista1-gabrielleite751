@@ -15,7 +15,16 @@
 def main():
     print("questao 5")
 
+    x = int(input("Quantos cigarros você fuma por dia? "))
+y = int(input("A quantos anos você fuma? "))
 
-    
+temp = int(y * 365 * x)
+
+minu = int(10 * temp)
+
+dia = int(minu % 1440)
+
+print("Você perderá " + str(dia) + " dias")
+
 if __name__ == '__main__':
     main()
